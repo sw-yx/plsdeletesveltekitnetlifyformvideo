@@ -1,8 +1,13 @@
+<script context="module">
+	export const prerender = true;
+</script>
+
+
 <h1>Welcome to SvelteKit</h1>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
 <!-- "/src/routes/test-form.svelte" -->
-<form name="test" method="post" action="/success">
+<form name="test" method="post" netlify netlify-honeypot="bot-field">
     <input type="hidden" name="form-name" value="test" />
     <input type="text" name="bot-field" />
     <p>
